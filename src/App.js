@@ -1,4 +1,7 @@
+import React from 'react';
 import './App.css';
+import InfoContainer from './components/info-container';
+import GraphContainer from './components/graph-container';
 
 function App() {
   return (
@@ -45,15 +48,27 @@ function App() {
         
         {/*Parte derecha*/}
         <div className='col-10 bg-light'>
+          
           <h1 className=" pt-3 text-black">Dashboard</h1>
           
-          <div className="col-12 mt-4 bg-dark contenedor-graficas">
-              
+          <div className="col-12 mt-4 bg-dark contenedor-data">
+            <div className='info-containers'>
+              <InfoContainer>Example</InfoContainer>
+              <InfoContainer>Example</InfoContainer>
+              <InfoContainer>Example</InfoContainer>
+              <InfoContainer>Example</InfoContainer>
+            </div>
+
+            <div className='graph-containers'>
+              <GraphContainer>Grafica de barras</GraphContainer>
+              <GraphContainer>Grafica de pastel</GraphContainer>
+            </div>   
           </div>
 
         </div>
 
       </div>
+      
     </div>
   );
 }

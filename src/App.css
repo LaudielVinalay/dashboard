@@ -43,8 +43,22 @@ h1{
   margin-left: 20px;
 }
 
-.contenedor-graficas{
-  height: 600px;
-  border-radius: 30px;
+.contenedor-data{
+  height: 640px;
+  border-radius: 10px;
   margin-left: 1px;
+}
+
+.info-containers{
+  display: flex;
+  width: 100%;
+  height: 30%;
+  padding-left: 80px;
+}
+
+.graph-containers{
+  display: flex;
+  width: 100%;
+  height: 70%;
+  padding-left: 80px;
 }
